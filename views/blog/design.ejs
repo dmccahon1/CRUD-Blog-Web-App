@@ -1,0 +1,34 @@
+<%- include ../../layouts/header.ejs %>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 new_post">
+      <h1>Navigation</h1>
+      <ul id="nav_container" style="left: 0px">
+        <li><a class="active" href="/blog">Home</a></li>
+        <li><a class="active" href="/blog/design">Design</a></li>
+      </ul><br />
+      <h1>Text Formatting</h1>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <p>Phasellus eleifend massa odio, a ultricies dui varius nec. Curabitur dictum feugiat nisl. Aliquam enim nulla, lacinia at ex at, viverra aliquam enim. Mauris non erat justo. Aenean sed ipsum gravida, aliquet libero eu, congue dui. Quisque suscipit turpis erat, vitae fringilla magna consequat quis. Aenean eu tempor neque. Cras blandit orci in sapien fermentum consequat. Duis condimentum ligula eget mi laoreet gravida. Phasellus feugiat nec enim vitae lacinia. Pellentesque lectus dui, imperdiet ut fermentum at, gravida quis est. Sed ultricies velit eros, et fringilla sem dignissim id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean egestas nisi eget nisl fermentum, vel fringilla nisi tincidunt. Phasellus euismod sapien ac lectus pretium, id commodo nulla volutpat.</p>
+      <h1>Buttons</h1>
+      <button class="btn btn-info edit_but">Edit</button>
+      <button class="btn btn-danger delete_but">Delete</button><br /><br />
+      <button class="btn btn-lg create_post">Homepage Create Post</button><br /><br />
+      <input type="submit" class="btn btn-lg create_post btn-min-post" name="Submit" value="Create New Post" /><br /><br />
+      <input  class="btn btn-lg create_post btn-min-post" type="submit" name="Submit" value="Edit Post" />
+
+      <h1>Input Areas</h1>
+        <textarea class="edit_title" type="text" name="name" id="name"/>Add and Edit Title Input</textarea><br /><br />
+        <textarea class="edit_content" type="text" name="content" />Add and Edit Content Text Areas</textarea><br /><br />
+
+      </div>
+    </div>
+  </div>
+
+<%- include ../../layouts/footer.ejs %>

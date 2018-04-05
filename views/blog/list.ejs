@@ -1,0 +1,48 @@
+
+<%- include ../../layouts/header.ejs %>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 post_cont">
+        <% if (data) { %>
+          <% data.forEach(function(bPost){ %>
+          <h3><%= bPost.name %><br /></h3>
+          <%= bPost.content %><br /><br />
+          Created By: <%= bPost.author %><br />
+
+
+           <div style="float:right">
+             <a href='/blog/edit/<%= bPost.id %>' class="btn btn-info edit_but">Edit</a> &nbsp;
+              <form method="post" action="/blog/delete/<%= bPost.id %>" style="float:right">
+               <input type="submit" class="btn btn-danger delete_but" name="delete" value='Delete' onClick="return confirm('Are you sure you want to delete?')" /><br />
+               <input type="hidden" name="_method" value="DELETE" />
+              </form>
+           </div>
+           <hr>
+          <% }) %>
+           <% } %>
+			</div>
+			<div class="hor_gap">
+
+			</div>
+			<div class="col-lg-5 about_cont">
+				<div class="about_post">
+					<h3>About</h3>
+					<p>This web application is created in conjunction with the criteria set out by the coursework desciptor. The application allows for
+          users to post text which is open for others to see. <br /><br />
+
+        This application supports multiple user interaction as each post an author can be assigned.  In future, a search function could be added
+        to search for posts that a user has created.<br /><br />
+
+        Each webpage follows the same schema as header and footer templates are used on every page to make them equal. Also, one core css file is used rather than
+      one for each seperate page. This allows the same type of input to be assigned the same class on different pages and allows for code re-use.</p>
+				</div>
+				<div class="vert_gap">
+				</div>
+				<!-- Button to create post -->
+        <a href="/blog/add" class="btn btn-lg create_post">Create New Post</a>
+			</div>
+    </div>
+  </div>
+
+<%- include ../../layouts/footer.ejs %>

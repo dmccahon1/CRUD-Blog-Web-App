@@ -1,0 +1,27 @@
+<%- include ../../layouts/header.ejs %>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 new_post">
+        <% if (messages.error) { %>
+            <div class="alert alert-danger">
+								<%- messages.error %>
+						</div>
+        <% } %>
+
+        <form action="/blog/add" method="post" name="form1">
+        <h3>Title</h3>
+          <textarea type="text" class="new_title" name="name" id="name" value="<%= name %>" /></textarea>
+          <br /><br />
+         <h3>Content</h3>
+          <textarea type="text" class="new_content" name="content" value="<%= content %>" /></textarea>
+          <br /><br />
+         <h3>Author</h3>
+          <textarea type="text" class="new_title" name="author" value="<%= author %>" />Annonymous</textarea>
+          <br /><br />
+         <input type="submit" class="btn btn-lg create_post btn-min-post" name="Submit" value="Create New Post" />
+       </form>
+			</div>
+		</div>
+</div>
+
+<%- include ../../layouts/footer.ejs %>

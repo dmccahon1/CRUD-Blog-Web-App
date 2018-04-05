@@ -1,0 +1,33 @@
+{
+  "name": "blog_app",
+  "version": "1.0.0",
+  "description": "app for web tech set08101",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "app",
+    "blog",
+    "express",
+    "nodejs",
+    "napier",
+    "edinburgh",
+    "40214392"
+  ],
+  "author": "David McCahon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "express-flash": "0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.3",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}

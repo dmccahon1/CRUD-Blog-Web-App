@@ -1,0 +1,141 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: verdana;
+  font-size: 14px;
+  color: #444242;
+  background-color: #dcd0c0
+}
+
+/*---NAV---*/
+#nav_container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444242;
+  height: 60px;
+  padding-left: 20%;
+}
+
+li {
+  float:left
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 21px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+    background-color: #C0B283;
+    color:#444242;
+}
+
+/*---Header---*/
+div.header{
+  background-color: #C0B283;
+  padding-top: 38px;
+  height: 200px;
+  text-align: center;
+}
+
+/*---Content---*/
+.about_post, .post_cont, .create_post, .new_post {
+  border-radius: 25px;
+  border-stye: 1px solid #F4F4F4;
+  background-color: #F4F4F4;
+  padding: 15px 25px 5px 25px;
+  margin-bottom: 100px;
+}
+
+.post_cont{
+  margin-top: -5%;
+  margin-bottom: 100px;
+}
+
+.about_post{
+  margin-top: -12.5%;
+  margin-bottom: 0;
+}
+
+/*---Buttons---*/
+.create_post {
+  background-color: #C0B283;
+  width: 100%;
+  text-align: center;
+  color: #444242;
+  border-color: #AFA378;
+  margin: auto;
+  height: 5%;
+  padding-top: 10px;
+}
+
+.btn-min-post{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25px;
+}
+
+/*---Dividers*/
+.hor_gap{
+  width: 25px;
+}
+
+.vert_gap {
+  height: 25px;
+}
+/*---Text Headings---*/
+h2 {
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+/*---/Blog/add---*/
+.new_post{
+  margin-top: -5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.new_title, .edit_title{
+  width: 100%;
+  height: 30px;
+}
+
+.new_content, .edit_content{
+  width: 100%;
+  height: 400px;
+}
+
+}
+.new_content{
+    display: inline-block;
+}
+
+hr{
+  margin-top: 40px;
+  border-color: #C0B283;
+}
+
+textarea{
+  background-color: #f4f4f4;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/*---Scroll Back to Top---*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    background-color: #C0B283;
+    border-color: #AFA378;
+    color: white;
+}
